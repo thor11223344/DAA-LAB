@@ -977,3 +977,31 @@ int main()
 }
 
 
+
+
+
+
+
+
+
+
+
+
+| Program   | Algorithm                  | Best Case                      | Average Case   | Worst Case     |
+| --------- | -------------------------- | ------------------------------ | -------------- | -------------- |
+| **1(a)**  | Naive String Matching      | **O(n)**                       | **O(nm)**      | **O(nm)**      |
+| **1(b)**  | Iterative Binary Search    | **O(1)**                       | **O(log n)**   | **O(log n)**   |
+| **2**     | Merge Sort                 | **O(n log n)**                 | **O(n log n)** | **O(n log n)** |
+| **3**     | Quick Sort                 | **O(n log n)**                 | **O(n log n)** | **O(n²)**      |
+| **4(a)**  | Depth First Search (DFS)   | **O(V²)** *(Adjacency Matrix)* | **O(V²)**      | **O(V²)**      |
+| **4(b)**  | Breadth First Search (BFS) | **O(V²)** *(Adjacency Matrix)* | **O(V²)**      | **O(V²)**      |
+| **5**     | Topological Sort (DFS)     | **O(V²)** *(Adjacency Matrix)* | **O(V²)**      | **O(V²)**      |
+| **6**     | Horspool String Matching   | **O(n/m)**                     | **O(n)**       | **O(nm)**      |
+| **7**     | Warshall's Algorithm       | **O(n³)**                      | **O(n³)**      | **O(n³)**      |
+| **8**     | Floyd's Algorithm          | **O(n³)**                      | **O(n³)**      | **O(n³)**      |
+| **9**     | 0/1 Knapsack (Recursive)   | **O(2ⁿ)**                      | **O(2ⁿ)**      | **O(2ⁿ)**      |
+| **10(a)** | Prim's Algorithm           | **O(V²)** *(Adjacency Matrix)* | **O(V²)**      | **O(V²)**      |
+| **10(b)** | Kruskal's Algorithm        | **O(E log E)**                 | **O(E log E)** | **O(E log E)** |
+| **11**    | Dijkstra's Algorithm       | **O(V²)** *(Adjacency Matrix)* | **O(V²)**      | **O(V²)**      |
+| **12**    | N-Queens (Backtracking)    | **O(N!)**                      | **O(N!)**      | **O(N!)**      |
+
