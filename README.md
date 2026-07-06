@@ -422,53 +422,6 @@ int main() {
 
 
 
-7)
-
-
-
-
-
-
-#include <stdio.h>
-
-void warshall(int p[][10], int n) {
-    // k is the intermediate vertex, i is source, j is destination
-    for (int k = 0; k < n; k++) {
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                // If a path already exists, or a path exists through vertex k
-                if (p[i][k] && p[k][j]) {
-                    p[i][j] = 1;
-                }
-            }
-        }
-    }
-}
-
-int main() {
-    int a[10][10], n;
-
-    printf("Enter number of vertices: ");
-    scanf("%d", &n);
-
-    printf("Enter the adjacency matrix (0 or 1):\n");
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n; j++) {
-            scanf("%d", &a[i][j]);
-        }
-    }
-
-    warshall(a, n);
-
-    printf("\nTransitive Closure (Path Matrix):\n");
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n; j++) {
-            printf("%d ", a[i][j]);
-        }
-        printf("\n");
-    }
-    return 0;
-}
 
 
 
